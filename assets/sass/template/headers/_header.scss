@@ -273,6 +273,24 @@
 .header-logo {
     padding-top: 15px;
     padding-bottom: 15px;
+    a {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+    }
+    .logo-text {
+        color: $title-color;
+        font-family: $title-font;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: -0.02em;
+    }
+    @include sm {
+        .logo-text {
+            font-size: 22px;
+        }
+    }
 }
 .header-links {
     > ul {
@@ -431,6 +449,9 @@
     }
     .sticky-wrapper.header-sticky {
         background: $title-color;
+    }
+    .header-logo .logo-text {
+        color: $white-color;
     }
     .sidebar-btn {
         border-color: $white-color;

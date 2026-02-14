@@ -5329,6 +5329,24 @@ ul.wp-block-latest-posts li:last-child {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+.header-logo a {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+.header-logo .logo-text {
+  color: var(--title-color);
+  font-family: var(--title-font);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+@media (max-width: 767px) {
+  .header-logo .logo-text {
+    font-size: 22px;
+  }
+}
 .header-layout2 .header-logo img {
   height: 38px;
   width: auto;
@@ -5485,6 +5503,9 @@ ul.wp-block-latest-posts li:last-child {
 }
 .header-layout2 .sticky-wrapper.header-sticky {
   background: var(--title-color);
+}
+.header-layout2 .header-logo .logo-text {
+  color: var(--white-color);
 }
 .header-layout2 .sidebar-btn {
   border-color: var(--white-color);
@@ -6160,7 +6181,9 @@ ul.wp-block-latest-posts li:last-child {
 }
 .hero-style2 .hero-text {
   max-width: 520px;
-  margin-top: 24px;
+  font-size: 26px;
+  line-height: 1.5;
+  margin-top: 16px;
   margin-bottom: 28px;
 }
 .hero-style2 .btn {
@@ -6248,6 +6271,10 @@ ul.wp-block-latest-posts li:last-child {
 @media (max-width: 767px) {
   .hero-style2 .hero-title {
     font-size: 50px;
+  }
+  .hero-style2 .hero-text {
+    font-size: 22px;
+    margin-top: 14px;
   }
   .hero-2 .hero-2-thumb {
     height: 580px;

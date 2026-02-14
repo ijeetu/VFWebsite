@@ -174,8 +174,10 @@
         font-size: 100px;
     }
     .hero-text {
-        margin-top: 26px;
-        margin-bottom: 40px;
+        font-size: 26px;
+        line-height: 1.5;
+        margin-top: 16px;
+        margin-bottom: 28px;
     }
     .btn {
         margin-bottom: 43px;
@@ -238,6 +240,10 @@
 @include sm {
     .hero-style2 .hero-title {
         font-size: 50px;
+    }
+    .hero-style2 .hero-text {
+        font-size: 22px;
+        margin-top: 14px;
     }
     .hero-2 .hero-2-thumb {
         height: 580px;
