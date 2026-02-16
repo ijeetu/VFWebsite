@@ -7,6 +7,7 @@
     $(window).on("load", function () {
         preloader();
         wowAnimation();
+        initViewportReveal();
     });
 
 
@@ -16,6 +17,52 @@
     function preloader() {
         $('.preloader').delay(0).fadeOut();
     };
+
+    function initViewportReveal() {
+        var revealItems = document.querySelectorAll('.vf-reveal');
+        if (!revealItems.length) {
+            return;
+        }
+
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            revealItems.forEach(function (item) {
+                item.classList.add('is-visible');
+            });
+            return;
+        }
+
+        revealItems.forEach(function (item) {
+            var itemTop = item.getBoundingClientRect().top;
+            if (itemTop < window.innerHeight * 0.95) {
+                item.classList.add('is-visible');
+            }
+        });
+
+        document.body.classList.add('reveal-ready');
+
+        if (!('IntersectionObserver' in window)) {
+            revealItems.forEach(function (item) {
+                item.classList.add('is-visible');
+            });
+            return;
+        }
+
+        var observer = new IntersectionObserver(function (entries, revealObserver) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.16,
+            rootMargin: '0px 0px -8% 0px'
+        });
+
+        revealItems.forEach(function (item) {
+            observer.observe(item);
+        });
+    }
 
 
     /*===========================================
