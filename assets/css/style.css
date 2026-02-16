@@ -9263,14 +9263,47 @@ blockquote p {
   /* Extra small devices */
   /* Extra small devices */
 }
+.cta-area-1 .cta-message {
+  color: var(--white-color);
+  font-size: clamp(24px, 2.2vw, 38px);
+  line-height: 1.35;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  text-wrap: balance;
+}
+.cta-area-1 .cta-line {
+  display: block;
+}
+.cta-area-1 .cta-line + .cta-line {
+  margin-top: 6px;
+}
+.cta-area-1 .cta-word-muted {
+  color: rgba(255, 255, 255, 0.72);
+  font-style: italic;
+}
+.cta-area-1 .cta-word-focus {
+  color: var(--theme-color);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
 @media (max-width: 1399px) {
   .cta-area-1 .sec-title {
     font-size: 60px;
+  }
+  .cta-area-1 .cta-message {
+    font-size: clamp(22px, 2.5vw, 34px);
   }
 }
 @media (max-width: 991px) {
   .cta-area-1 .sec-title {
     font-size: 50px;
+  }
+  .cta-area-1 .cta-message {
+    font-size: clamp(20px, 4.5vw, 28px);
   }
 }
 @media (max-width: 767px) {
