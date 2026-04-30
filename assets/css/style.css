@@ -9081,6 +9081,14 @@ blockquote p {
   color: var(--theme-color);
   font-weight: 700;
 }
+.problem-line-crisis {
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.problem-line-crisis .problem-line-suffix {
+  color: var(--title-color);
+  font-weight: 500;
+}
 .problem-quote-image {
   border: 1px solid rgba(10, 12, 0, 0.1);
   transition: transform 0.45s ease, border-color 0.35s ease;
@@ -9254,6 +9262,64 @@ blockquote p {
 
 /*------------------- 4.00. CTA -------------------*/
 /* CTA Area 1 ---------------------------------- */
+.cta-area-1 {
+  position: relative;
+  background:
+    radial-gradient(circle at 14% 22%, rgba(1, 199, 243, 0.24), transparent 0 28%),
+    radial-gradient(circle at 84% 18%, rgba(255, 255, 255, 0.12), transparent 0 18%),
+    radial-gradient(circle at 50% 110%, rgba(1, 199, 243, 0.16), transparent 0 30%),
+    linear-gradient(135deg, #061118 0%, #0a1f29 46%, #07141b 100%);
+}
+.cta-area-1:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 78px 78px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.65), transparent 92%);
+  pointer-events: none;
+}
+.cta-area-1:after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  right: -120px;
+  bottom: -140px;
+  border-radius: 50%;
+  background: rgba(1, 199, 243, 0.22);
+  filter: blur(70px);
+  pointer-events: none;
+}
+.cta-area-1 .container {
+  position: relative;
+  z-index: 1;
+}
+.cta-area-1 .cta-panel {
+  position: relative;
+  padding: clamp(34px, 5vw, 64px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.04));
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.32);
+  backdrop-filter: blur(14px);
+  overflow: hidden;
+}
+.cta-area-1 .cta-panel:before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 3px;
+  background: linear-gradient(90deg, rgba(1, 199, 243, 0), rgba(1, 199, 243, 0.95), rgba(1, 199, 243, 0));
+}
+.cta-area-1 .cta-panel:after {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  pointer-events: none;
+}
 .cta-area-1 .sec-title {
   font-size: 80px;
   line-height: 1.125;
@@ -9266,10 +9332,10 @@ blockquote p {
 .cta-area-1 .cta-message {
   color: var(--white-color);
   font-size: clamp(24px, 2.2vw, 38px);
-  line-height: 1.35;
+  line-height: 1.28;
   font-weight: 500;
-  letter-spacing: -0.01em;
-  max-width: 980px;
+  letter-spacing: -0.025em;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
   text-wrap: balance;
@@ -9278,17 +9344,26 @@ blockquote p {
   display: block;
 }
 .cta-area-1 .cta-line + .cta-line {
-  margin-top: 6px;
+  margin-top: 10px;
 }
 .cta-area-1 .cta-word-muted {
   color: rgba(255, 255, 255, 0.72);
   font-style: italic;
+  text-decoration: line-through;
+  text-decoration-color: rgba(255, 255, 255, 0.28);
 }
 .cta-area-1 .cta-word-focus {
-  color: var(--theme-color);
+  display: inline-flex;
+  align-items: center;
+  padding: 0.12em 0.48em;
+  margin: 0 0.08em;
+  background: rgba(1, 199, 243, 0.16);
+  border: 1px solid rgba(1, 199, 243, 0.26);
+  color: #dffaff;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04);
 }
 @media (max-width: 1399px) {
   .cta-area-1 .sec-title {
@@ -9299,6 +9374,12 @@ blockquote p {
   }
 }
 @media (max-width: 991px) {
+  .cta-area-1 .cta-panel {
+    padding: 30px 24px;
+  }
+  .cta-area-1 .cta-panel:after {
+    inset: 14px;
+  }
   .cta-area-1 .sec-title {
     font-size: 50px;
   }
@@ -9312,6 +9393,15 @@ blockquote p {
   }
 }
 @media (max-width: 575px) {
+  .cta-area-1:before {
+    background-size: 46px 46px;
+  }
+  .cta-area-1 .cta-panel {
+    padding: 24px 18px;
+  }
+  .cta-area-1 .cta-panel:after {
+    inset: 10px;
+  }
   .cta-area-1 .sec-title {
     font-size: 36px;
   }
