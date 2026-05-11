@@ -9119,6 +9119,15 @@ blockquote p {
   letter-spacing: -0.01em;
   margin-bottom: 0;
 }
+.problem-forward-text-accent {
+  color: var(--theme-color);
+  font-weight: 700;
+  white-space: nowrap;
+  background-image: linear-gradient(90deg, var(--theme-color), #0a1f29 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 @media (prefers-reduced-motion: reduce) {
   .reveal-ready .vf-reveal,
   .reveal-ready .vf-reveal.is-visible {
