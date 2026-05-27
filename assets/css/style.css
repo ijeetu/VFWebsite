@@ -9126,8 +9126,8 @@ blockquote p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
-  padding: clamp(32px, 4vw, 52px);
+  gap: 0;
+  padding: clamp(28px, 3.4vw, 44px) clamp(32px, 4vw, 52px);
   background: radial-gradient(circle at top center, rgba(1, 199, 243, 0.18), transparent 36%), linear-gradient(180deg, #ffffff 0%, #f7fbfc 52%, #eef8fb 100%);
   border: 1px solid rgba(10, 12, 0, 0.08);
   color: var(--title-color);
@@ -9145,23 +9145,6 @@ blockquote p {
 .problem-statement-card:hover,
 .problem-forward-card:hover {
   border-color: rgba(1, 199, 243, 0.45);
-}
-.problem-forward-eyebrow {
-  display: inline-flex;
-  align-items: center;
-  min-height: 40px;
-  padding: 10px 16px;
-  border-radius: 0;
-  background: rgba(1, 199, 243, 0.12);
-  box-shadow: inset 0 0 0 1px rgba(1, 199, 243, 0.14);
-  color: var(--theme-color);
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.16em;
-  line-height: 1;
-  text-transform: uppercase;
-  justify-content: center;
-  margin: 0 auto;
 }
 .problem-forward-content {
   width: 100%;
@@ -9259,7 +9242,6 @@ blockquote p {
     padding: 30px 26px;
   }
   .problem-forward-card {
-    gap: 20px;
     text-align: center;
     align-items: center;
   }
