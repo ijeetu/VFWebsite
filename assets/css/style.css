@@ -6183,10 +6183,10 @@ ul.wp-block-latest-posts li:last-child {
 }
 .hero-style2 .hero-title .hero-title-mark {
   display: inline-block;
-  font-family: var(--body-font);
-  font-weight: 800;
-  font-size: 0.84em;
-  letter-spacing: 0.14em;
+  font-family: "Unbounded", sans-serif;
+  font-weight: 700;
+  font-size: 0.87em;
+  letter-spacing: 0.09em;
   line-height: 1;
   text-transform: uppercase;
 }
@@ -6284,7 +6284,7 @@ ul.wp-block-latest-posts li:last-child {
     font-size: 50px;
   }
   .hero-style2 .hero-title .hero-title-mark {
-    letter-spacing: 0.12em;
+    letter-spacing: 0.08em;
   }
   .hero-style2 .hero-text {
     font-size: 22px;
@@ -6315,7 +6315,7 @@ ul.wp-block-latest-posts li:last-child {
     font-size: 40px;
   }
   .hero-style2 .hero-title .hero-title-mark {
-    letter-spacing: 0.1em;
+    letter-spacing: 0.06em;
   }
   .hero-style2 {
     padding: 100px 0 40px;
