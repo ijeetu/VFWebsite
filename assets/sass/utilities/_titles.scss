@@ -1,7 +1,7 @@
 .sec-title {
     margin-bottom: calc(var(--section-title-space) - 43px);
     margin-top: -0.18em;
-    font-weight: 600;
+    font-weight: 800;
     letter-spacing: -1.8px;
     @include xs {
         letter-spacing: normal;
@@ -41,7 +41,7 @@
 .box-title {
     font-size: 24px;
     line-height: 1.417;
-    font-weight: 600;
+    font-weight: 800;
     margin-top: -0.30em;
     a {
         color: inherit;
@@ -79,7 +79,7 @@
 }
 .white-title {
     color: #fff;
-    font-weight: 700;
+    font-weight: 800;
     position: relative;
     padding-bottom: 9px;
     margin-bottom: 19px;
@@ -95,16 +95,16 @@
 }
 .page-title {
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 800;
     margin-top: -0.3em;
 }
 .page-subtitle {
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 800;
 }
 .shadow-text {
     font-size: 120px;
-    font-weight: 500;
+    font-weight: 800;
     font-family: $title-font;
     color: rgba(0, 0, 0, 0.03);
 }

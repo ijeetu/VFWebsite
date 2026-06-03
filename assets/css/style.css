@@ -93,8 +93,8 @@
   --success-color: #28a745;
   --error-color: #dc3545;
   --border-color: #E3E3E3;
-  --title-font: "Poppins", sans-serif;
-  --body-font: "Poppins", sans-serif;
+  --title-font: "Plus Jakarta Sans", sans-serif;
+  --body-font: "Plus Jakarta Sans", sans-serif;
   --icon-font: "Font Awesome 5 Free";
   --main-container: 1296px;
   --container-gutters: 24px;
@@ -260,7 +260,7 @@ h6 {
   font-family: var(--title-font);
   color: var(--title-color);
   text-transform: none;
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.4;
   margin: 0 0 15px 0;
 }
@@ -2502,7 +2502,7 @@ body.bg-title .scroll-top::after {
 .sec-title {
   margin-bottom: calc(var(--section-title-space) - 43px);
   margin-top: -0.18em;
-  font-weight: 600;
+  font-weight: 800;
   letter-spacing: -1.8px;
   /* Extra small devices */
 }
@@ -2546,7 +2546,7 @@ body.bg-title .scroll-top::after {
 .box-title {
   font-size: 24px;
   line-height: 1.417;
-  font-weight: 600;
+  font-weight: 800;
   margin-top: -0.3em;
 }
 .box-title a {
@@ -2586,7 +2586,7 @@ body.bg-title .scroll-top::after {
 
 .white-title {
   color: #fff;
-  font-weight: 700;
+  font-weight: 800;
   position: relative;
   padding-bottom: 9px;
   margin-bottom: 19px;
@@ -2603,18 +2603,18 @@ body.bg-title .scroll-top::after {
 
 .page-title {
   font-size: 40px;
-  font-weight: 500;
+  font-weight: 800;
   margin-top: -0.3em;
 }
 
 .page-subtitle {
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 800;
 }
 
 .shadow-text {
   font-size: 120px;
-  font-weight: 500;
+  font-weight: 800;
   font-family: var(--title-font);
   color: rgba(0, 0, 0, 0.03);
 }
@@ -6054,7 +6054,7 @@ ul.wp-block-latest-posts li:last-child {
 .hero-title {
   margin-bottom: 0;
   color: var(--title-color);
-  font-weight: 600;
+  font-weight: 800;
   letter-spacing: -3px;
   font-size: 120px;
 }
@@ -6072,7 +6072,7 @@ ul.wp-block-latest-posts li:last-child {
   padding: 185px 0 80px;
 }
 .hero-style1 .hero-title {
-  font-weight: 600;
+  font-weight: 800;
   letter-spacing: -3.6px;
 }
 .hero-style1 .hero-text {
@@ -6183,10 +6183,10 @@ ul.wp-block-latest-posts li:last-child {
 }
 .hero-style2 .hero-title .hero-title-mark {
   display: inline-block;
-  font-family: "Unbounded", sans-serif;
-  font-weight: 700;
-  font-size: 0.87em;
-  letter-spacing: 0.09em;
+  font-family: var(--title-font);
+  font-weight: 800;
+  font-size: 0.9em;
+  letter-spacing: 0.06em;
   line-height: 1;
   text-transform: uppercase;
 }
@@ -6196,6 +6196,35 @@ ul.wp-block-latest-posts li:last-child {
   line-height: 1.5;
   margin-top: 16px;
   margin-bottom: 28px;
+}
+.hero-style2 .hero-text-patch {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 22px 16px;
+  background: linear-gradient(135deg, rgba(4, 15, 22, 0.78), rgba(7, 24, 34, 0.9));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 22px 54px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  overflow: hidden;
+}
+.hero-style2 .hero-text-patch:before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 4px;
+  background: linear-gradient(180deg, rgba(1, 199, 243, 0.98), rgba(1, 199, 243, 0.24));
+}
+.hero-style2 .hero-text-patch-line {
+  display: block;
+  color: var(--white-color);
+  font-family: var(--title-font);
+  font-size: clamp(18px, 1.45vw, 24px);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
 }
 .hero-style2 .btn {
   margin-bottom: 0;
@@ -6290,6 +6319,12 @@ ul.wp-block-latest-posts li:last-child {
     font-size: 22px;
     margin-top: 14px;
   }
+  .hero-style2 .hero-text-patch {
+    padding: 13px 18px 15px;
+  }
+  .hero-style2 .hero-text-patch-line {
+    font-size: clamp(16px, 4.4vw, 20px);
+  }
   .hero-2 .hero-2-thumb {
     height: 580px;
     width: 320px;
@@ -6316,6 +6351,11 @@ ul.wp-block-latest-posts li:last-child {
   }
   .hero-style2 .hero-title .hero-title-mark {
     letter-spacing: 0.06em;
+  }
+  .hero-style2 .hero-text-patch {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px 16px 14px;
   }
   .hero-style2 {
     padding: 100px 0 40px;
@@ -9154,7 +9194,7 @@ blockquote p {
   color: inherit;
   font-family: var(--title-font);
   font-size: clamp(24px, 2.2vw, 36px);
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: -0.03em;
   line-height: 1.16;
   max-width: 980px;
@@ -9457,10 +9497,11 @@ blockquote p {
 }
 .cta-area-1 .cta-message {
   color: var(--white-color);
-  font-size: clamp(24px, 2.2vw, 38px);
-  line-height: 1.28;
-  font-weight: 500;
-  letter-spacing: -0.025em;
+  font-family: var(--title-font);
+  font-size: clamp(28px, 2.7vw, 46px);
+  line-height: 1.12;
+  font-weight: 800;
+  letter-spacing: -0.04em;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -9470,7 +9511,22 @@ blockquote p {
   display: block;
 }
 .cta-area-1 .cta-line + .cta-line {
-  margin-top: 10px;
+  margin-top: 12px;
+}
+.cta-area-1 .cta-line-lead {
+  color: rgba(255, 255, 255, 0.9);
+}
+.cta-area-1 .cta-line-strong {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.16em 0.52em;
+  margin-top: 14px;
+  background: rgba(1, 199, 243, 0.14);
+  border: 1px solid rgba(1, 199, 243, 0.28);
+  color: #dffaff;
+  letter-spacing: 0.02em;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.04);
 }
 .cta-area-1 .cta-word-muted {
   color: rgba(255, 255, 255, 0.72);
@@ -9496,7 +9552,7 @@ blockquote p {
     font-size: 60px;
   }
   .cta-area-1 .cta-message {
-    font-size: clamp(22px, 2.5vw, 34px);
+    font-size: clamp(24px, 2.9vw, 38px);
   }
 }
 @media (max-width: 991px) {
@@ -9510,7 +9566,7 @@ blockquote p {
     font-size: 50px;
   }
   .cta-area-1 .cta-message {
-    font-size: clamp(20px, 4.5vw, 28px);
+    font-size: clamp(22px, 5vw, 30px);
   }
 }
 @media (max-width: 767px) {
